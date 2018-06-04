@@ -1,5 +1,6 @@
 import React from 'react';
 import style from './TodoList.css';
+import Todo from '../components/Todo';
 
 class TodoList extends React.Component {
 
@@ -7,7 +8,7 @@ class TodoList extends React.Component {
         return (
             <ul className={style.TodoList}>
                 {this.props.data.map((data) => {
-                    return <li key={data.id} onClick={() => this.props.removeTask(data.id)}>{data.text}</li>
+                    return <Todo key={data.id} id={data.id} text={data.text} removeTodoTask={() => this.props.removeTask(data.id)}/>
                 })}
             </ul>
         )

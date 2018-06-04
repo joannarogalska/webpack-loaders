@@ -1,0 +1,17 @@
+.TodoList {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.TodoList li {
+    position: relative;
+    display: block;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 4px;
+    cursor: pointer;
+}

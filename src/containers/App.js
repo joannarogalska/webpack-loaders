@@ -39,7 +39,6 @@ class App extends React.Component {
     render() {
         return (
             <div className={style.TodoApp}>
-                Tutaj pojawią się komponenty naszej aplikacji.
                 <Title title={this.state.title} count={this.state.data.length} />
                 <TodoList data={this.state.data} removeTask={(id)=>this.removeTodo(id)}/>
             </div>
